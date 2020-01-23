@@ -40,6 +40,7 @@ class SegmentTree {
   }
 
   query(left, right) {
+    if(left > right) return this.operationFallback
     if(left < 0) left = 0
     if(right >= this.inputSize) right = this.inputSize - 1
     let l = left + this.auxSize, r = right + this.auxSize

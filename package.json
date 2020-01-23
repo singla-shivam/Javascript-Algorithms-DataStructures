@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/singla-shivam/Javascript-Algorithms-DataStructures/issues"
   },
-  "homepage": "https://github.com/singla-shivam/Javascript-Algorithms-DataStructures#readme"
+  "homepage": "https://github.com/singla-shivam/Javascript-Algorithms-DataStructures#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
 }

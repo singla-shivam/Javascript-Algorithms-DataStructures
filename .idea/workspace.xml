@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="" />
+    <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/linked-list/linkedList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/linked-list/linkedListNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/trees/binarySearchTree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/trees/segmentTree/__tests__/segmentTree.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/comparator/comparator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-structure/trees/segmentTree/segmentTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/segmentTree/segmentTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myAutoScrollToSource" value="true" />
+    <option name="myAutoScrollFromSource" value="true" />
+    <option name="myElementSize" value="428" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -14,7 +33,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Wl8GdqACU7BZ5qPFXukgJVGoA9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,7 +46,106 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
+    <property name="last_opened_file_path" value="$USER_HOME$/contests" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.linkedList.test.js">
+    <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="it should return find all values in linked list and return index" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" />
+      <test-names>
+        <test-name value="it should return find all values in linked list and return index" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="it should return value using get" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" />
+      <test-names>
+        <test-name value="it should return value using get" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="it should traverse the list with given callback" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" />
+      <test-names>
+        <test-name value="it should traverse the list with given callback" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="it should work with any object" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" />
+      <test-names>
+        <test-name value="it should work with any object" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="linkedList.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jest.All Tests" />
+      <item itemvalue="Jest.linkedList.test.js" />
+      <item itemvalue="Jest.it should work with any object" />
+      <item itemvalue="Jest.it should return find all values in linked list and return index" />
+      <item itemvalue="Jest.it should return value using get" />
+      <item itemvalue="Jest.it should traverse the list with given callback" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.linkedList.test.js" />
+        <item itemvalue="Jest.it should traverse the list with given callback" />
+        <item itemvalue="Jest.it should return value using get" />
+        <item itemvalue="Jest.it should work with any object" />
+        <item itemvalue="Jest.it should return find all values in linked list and return index" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -47,7 +169,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579712726052</updated>
-      <workItem from="1579712728130" duration="50000" />
+      <workItem from="1579712728130" duration="6701000" />
+      <workItem from="1579783779638" duration="9615000" />
     </task>
     <servers />
   </component>
@@ -55,9 +178,56 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="424" y="44" width="531" height="637" key="#All_Tests" timestamp="1579713270121">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="424" y="44" width="531" height="637" key="#All_Tests/0.0.1366.728@0.0.1366.728" timestamp="1579713270121" />
     <state x="278" y="24" width="800" height="675" key="#Inspections" timestamp="1579712778262">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="278" y="24" width="800" height="675" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1579712778262" />
+    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579797092982">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579797092982" />
+    <state x="100" y="99" width="1166" height="528" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1579787643786">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="99" width="1166" height="528" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1579787643786" />
+    <state x="491" y="82" width="374" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1579716607667">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="491" y="82" width="374" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1579716607667" />
+    <state x="424" y="20" width="531" height="685" key="#should_build_tree_for_input_array_length_of_power_of_two" timestamp="1579714839175">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="424" y="20" width="531" height="685" key="#should_build_tree_for_input_array_length_of_power_of_two/0.0.1366.728@0.0.1366.728" timestamp="1579714839175" />
+    <state x="466" y="121" width="427" height="482" key="FileChooserDialogImpl" timestamp="1579785218637">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="121" width="427" height="482" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579785218637" />
+    <state width="1343" height="301" key="GridCell.Tab.0.bottom" timestamp="1579797093749">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="301" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579797093749" />
+    <state width="1343" height="301" key="GridCell.Tab.0.center" timestamp="1579797093748">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="301" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579797093748" />
+    <state width="1343" height="301" key="GridCell.Tab.0.left" timestamp="1579797093747">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="301" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579797093747" />
+    <state width="1343" height="301" key="GridCell.Tab.0.right" timestamp="1579797093748">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="301" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579797093748" />
+    <state x="347" y="159" key="run.anything.popup" timestamp="1579789927605">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="347" y="159" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1579789927605" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/javascript_algo_ds$should_build_tree_for_input_array_length_of_power_of_two.info" NAME="should build tree for input array length of power of two Coverage Results" MODIFIED="1579714890398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
