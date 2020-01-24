@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data-structure/doubly-linked-list/__tests__/doublyLinkedList.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/doubly-linked-list/doublyLinkedList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/doubly-linked-list/doublyLinkedListNode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/linked-list/linkedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/linked-list/linkedList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structure/doubly-linked-list/__tests__/doublyLinkedList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/doubly-linked-list/__tests__/doublyLinkedList.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +48,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.doublyLinkedList.test.js">
+  <component name="RunManager">
     <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -63,25 +58,6 @@
       <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
-    <configuration name="doublyLinkedList.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/data-structure/doubly-linked-list/__tests__/doublyLinkedList.test.js" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Jest.All Tests" />
-      <item itemvalue="Jest.doublyLinkedList.test.js" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Jest.doublyLinkedList.test.js" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -107,7 +83,7 @@
       <updated>1579712726052</updated>
       <workItem from="1579712728130" duration="6701000" />
       <workItem from="1579783779638" duration="19769000" />
-      <workItem from="1579840815563" duration="18143000" />
+      <workItem from="1579840815563" duration="18532000" />
     </task>
     <servers />
   </component>
@@ -123,10 +99,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="278" y="24" width="800" height="675" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1579712778262" />
-    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579875793037">
+    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579876181562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579875793037" />
+    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579876181562" />
     <state x="100" y="99" width="1166" height="528" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1579787643786">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -147,22 +123,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="121" width="427" height="482" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579785218637" />
-    <state width="1343" height="170" key="GridCell.Tab.0.bottom" timestamp="1579875800670">
+    <state width="1343" height="170" key="GridCell.Tab.0.bottom" timestamp="1579876188741">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579875800670" />
-    <state width="1343" height="170" key="GridCell.Tab.0.center" timestamp="1579875800668">
+    <state width="1343" height="170" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579876188741" />
+    <state width="1343" height="170" key="GridCell.Tab.0.center" timestamp="1579876188739">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579875800668" />
-    <state width="1343" height="170" key="GridCell.Tab.0.left" timestamp="1579875800668">
+    <state width="1343" height="170" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579876188739" />
+    <state width="1343" height="170" key="GridCell.Tab.0.left" timestamp="1579876188738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579875800668" />
-    <state width="1343" height="170" key="GridCell.Tab.0.right" timestamp="1579875800669">
+    <state width="1343" height="170" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579876188738" />
+    <state width="1343" height="170" key="GridCell.Tab.0.right" timestamp="1579876188740">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="170" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579875800669" />
+    <state width="1343" height="170" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579876188740" />
     <state width="1343" height="189" key="GridCell.Tab.1.bottom" timestamp="1579874815390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

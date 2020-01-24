@@ -416,3 +416,25 @@ test("it should traverse from tail the doubly linked list with given callback", 
   }
 
 })
+
+test("it should reverse the list", () => {
+  const arr = [1, 2, 5, 8, 5, 6, 45, 86, -9]
+  const len = arr.length
+  const l = DoublyLinkedList.fromArray(arr)
+  l.reverse()
+  let curr = l.head
+  let i = 0
+  while(curr) {
+    expect(curr.value).toBe(arr[len - i - 1])
+    curr = curr.next
+    i++
+  }
+
+  curr = l.tail
+  i = 0
+  while(curr) {
+    expect(curr.value).toBe(arr[i])
+    curr = curr.previous
+    i++
+  }
+})
