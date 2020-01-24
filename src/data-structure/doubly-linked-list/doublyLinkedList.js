@@ -34,7 +34,7 @@ class DoublyLinkedList {
   prepend(value) {
     const newNode = new DoublyLinkedListNode(value, this.head)
 
-    if(this.head) {
+    if (this.head) {
       this.head.previous = newNode
     }
     this.head = newNode
@@ -53,7 +53,7 @@ class DoublyLinkedList {
   append(value) {
     const newNode = new DoublyLinkedListNode(value)
 
-    if(!this.head) {
+    if (!this.head) {
       this.head = newNode
       this.tail = newNode
       this.size++
@@ -74,25 +74,23 @@ class DoublyLinkedList {
    * @return {null|DoublyLinkedListNode}
    */
   delete(value) {
-    if(!this.head) return null
+    if (!this.head) return null
 
     /** @type DoublyLinkedListNode*/
     let deleteNode = null
     let currentNode = this.head
 
-    while(currentNode) {
-      if(this.compare.equal(currentNode.value, value)) {
+    while (currentNode) {
+      if (this.compare.equal(currentNode.value, value)) {
         deleteNode = currentNode
-        if(deleteNode === this.head) {
+        if (deleteNode === this.head) {
           this.head = deleteNode.next
-          if(this.head) this.head.previous = null
-          if(deleteNode === this.tail) this.tail = null
-        }
-        else if(deleteNode === this.tail) {
+          if (this.head) this.head.previous = null
+          if (deleteNode === this.tail) this.tail = null
+        } else if (deleteNode === this.tail) {
           this.tail = this.tail.previous
           this.tail.next = null
-        }
-        else {
+        } else {
           const pr = deleteNode.previous
           const next = deleteNode.next
           pr.next = next
@@ -105,7 +103,7 @@ class DoublyLinkedList {
       currentNode = currentNode.next
     }
 
-    if(deleteNode) this.size --
+    if (deleteNode) this.size--
 
     return deleteNode
   }
@@ -151,8 +149,7 @@ class DoublyLinkedList {
     if (c.next) {
       this.head = c.next
       this.head.previous = null
-    }
-    else {
+    } else {
       this.head = null
       this.tail = null
     }
@@ -224,8 +221,8 @@ class DoublyLinkedList {
    * @param start {number} - 0 if you want to start from head to tail; 1 if you want to start from tail to head
    */
   traverse(callback, start = 0) {
-    if(!callback) throw new Error("{callback} is not defined")
-    if(start === 0) return this.traverseFromHead(callback)
+    if (!callback) throw new Error("{callback} is not defined")
+    if (start === 0) return this.traverseFromHead(callback)
     else this.traverseFromTail(callback)
   }
 
@@ -270,7 +267,7 @@ class DoublyLinkedList {
     const s = new Array(this.size)
     let currentNode = this.head
     let i = 0
-    while(currentNode){
+    while (currentNode) {
       s[i] = currentNode.value
       i++
       currentNode = currentNode.next

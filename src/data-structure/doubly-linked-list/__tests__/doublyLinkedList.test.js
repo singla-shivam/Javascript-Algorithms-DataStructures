@@ -167,11 +167,10 @@ test("it should delete n items from doubly linked list", () => {
     }
     expect(d.value).toBe(arr[i])
     expect(l.toString()).toBe(arr.reduce((a, b, i) => {
-      if(!deleted[i]) {
-        if(a !== "") return a += ` -> ${b}`
+      if (!deleted[i]) {
+        if (a !== "") return a += ` -> ${b}`
         else return b.toString()
-      }
-      else return a
+      } else return a
     }, ""))
   }
 
@@ -192,11 +191,10 @@ test("it should delete n items from doubly linked list", () => {
     }
     expect(d.value).toBe(arr[len - 1 - i])
     expect(l.toString()).toBe(arr.reduce((a, b, i) => {
-      if(!deleted[i]) {
-        if(a !== "") return a += ` -> ${b}`
+      if (!deleted[i]) {
+        if (a !== "") return a += ` -> ${b}`
         else return b.toString()
-      }
-      else return a
+      } else return a
     }, ""))
   }
 
@@ -414,7 +412,7 @@ test("it should traverse from tail the doubly linked list with given callback", 
 
   for (let i = arr.length - 1, len = arr.length; i >= 0; i--) {
     if (i === len - 1) expect(res[len - 1]).toBe(4 * arr[0])
-    else expect(res[i]).toBe(arr[len  - i - 1] + (len - i - 1) + Math.floor(len / 2))
+    else expect(res[i]).toBe(arr[len - i - 1] + (len - i - 1) + Math.floor(len / 2))
   }
 
 })
