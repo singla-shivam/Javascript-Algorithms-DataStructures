@@ -184,6 +184,7 @@ class LinkedList {
    * @param callback {TraverseCallback}
    */
   traverse(callback) {
+    if(!callback) throw new Error("{callback} is not defined")
     if (!this.head) return LinkedList.UNDEFINED_HEAD
     let curr = this.head
     let index = 0
@@ -232,16 +233,7 @@ class LinkedList {
    * @returns {String}
    */
   toString() {
-    let s = new Array(2 * this.size - 1)
-    s[0] = this.head.value
-    let curr = this.head.next
-    let i = 1
-    while (curr) {
-      s[i++] = "->"
-      s[i++] = curr.value.toString()
-      curr = curr.next
-    }
-    return s.join(' ')
+    return this.toArray().map(a => a.toString()).join(" -> ")
   }
 
   /**

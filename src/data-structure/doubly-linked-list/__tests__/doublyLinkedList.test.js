@@ -1,4 +1,4 @@
-const LinkedList = require('../linkedList')
+const DoublyLinkedList = require('../doublyLinkedList')
 
 class Person {
   constructor(age) {
@@ -10,8 +10,8 @@ class Person {
   }
 }
 
-test("should create list", () => {
-  const l = new LinkedList()
+test("should create doubly linked list", () => {
+  const l = new DoublyLinkedList()
   expect(l.size).toBe(0)
   expect(l.head).toBeNull()
   expect(l.tail).toBeNull()
@@ -28,8 +28,8 @@ test("should create list", () => {
   expect(l.head.next).toEqual(l.tail)
 })
 
-test('should support append', () => {
-  const l = new LinkedList()
+test('should support append to doubly linked list', () => {
+  const l = new DoublyLinkedList()
   expect(l.size).toBe(0)
   expect(l.head).toBeNull()
   expect(l.tail).toBeNull()
@@ -39,12 +39,14 @@ test('should support append', () => {
   expect(l.tail).not.toBeNull()
   expect(l.size).toBe(1)
   expect(l.head.value).toBe(1)
+  expect(l.tail.value).toBe(1)
 
   l.append(2)
   expect(l.size).toBe(2)
   expect(l.head.value).toBe(1)
   expect(l.head.next.value).toBe(2)
   expect(l.tail.value).toBe(2)
+  expect(l.tail.previous.value).toBe(1)
 
   l.append(3)
   expect(l.size).toBe(3)
@@ -52,12 +54,18 @@ test('should support append', () => {
   expect(l.head.next.value).toBe(2)
   expect(l.head.next.next.value).toBe(3)
   expect(l.tail.value).toBe(3)
+  expect(l.tail.previous.value).toBe(2)
+  expect(l.tail.previous.previous.value).toBe(1)
+  expect(l.tail.value).toBe(3)
   expect(l.toString()).toBe("1 -> 2 -> 3")
+
+  expect(l.head.previous).toBeNull()
+  expect(l.tail.next).toBeNull()
 
 })
 
-test('should support prepend', () => {
-  const l = new LinkedList()
+test('should support prepend to doubly linked list', () => {
+  const l = new DoublyLinkedList()
   expect(l.size).toBe(0)
   expect(l.head).toBeNull()
   expect(l.tail).toBeNull()
@@ -67,12 +75,15 @@ test('should support prepend', () => {
   expect(l.tail).not.toBeNull()
   expect(l.size).toBe(1)
   expect(l.head.value).toBe(1)
+  expect(l.tail.value).toBe(1)
+  expect(l.head).toBe(l.tail)
 
   l.prepend(2)
   expect(l.size).toBe(2)
   expect(l.head.value).toBe(2)
   expect(l.head.next.value).toBe(1)
   expect(l.tail.value).toBe(1)
+  expect(l.tail.previous.value).toBe(2)
 
   l.prepend(3)
   expect(l.size).toBe(3)
@@ -80,15 +91,18 @@ test('should support prepend', () => {
   expect(l.head.next.value).toBe(2)
   expect(l.head.next.next.value).toBe(1)
   expect(l.tail.value).toBe(1)
+  expect(l.tail.previous.value).toBe(2)
+  expect(l.tail.previous.previous.value).toBe(3)
+  expect(l.tail.value).toBe(1)
 
   expect(l.toString()).toBe("3 -> 2 -> 1")
 
 })
 
-test("should create list from array", () => {
+test("should create doubly linked list from array", () => {
   const arr = [1, 2, 5, 8, 5, 6, 45, 86, -9]
   const len = arr.length
-  const l = LinkedList.fromArray(arr)
+  const l = DoublyLinkedList.fromArray(arr)
 
   expect(l.size).toBe(len)
 
@@ -103,10 +117,10 @@ test("should create list from array", () => {
 
 })
 
-test("it should return array from linkedList", () => {
+test("it should return array from doubly linked list", () => {
   const arr = [1, 2, 5, 8, 5, 6, 45, 86, -9]
 
-  const l = new LinkedList()
+  const l = new DoublyLinkedList()
   arr.forEach(a => l.append(a))
   expect(l.size).toBe(arr.length)
   const ret = l.toArray()
@@ -117,8 +131,8 @@ test("it should return array from linkedList", () => {
 
 })
 
-test("it should delete one node list", () => {
-  const l = new LinkedList()
+test("it should delete one node doubly linked list", () => {
+  const l = new DoublyLinkedList()
   l.append(2)
   expect(l.size).toBe(1)
   expect(l.head).not.toBeNull()
@@ -129,15 +143,19 @@ test("it should delete one node list", () => {
   expect(l.head).toBeNull()
   expect(l.tail).toBeNull()
   expect(d.value).toBe(2)
+
+  expect(l.toString()).toBe("")
 })
 
-test("it should delete n items", () => {
-  const arr = [1, 2, 5, 8, 5, 6, 45, 86, -9]
+test("it should delete n items from doubly linked list", () => {
+  const arr = [1, 2, 3, 8, 5, 6, 45, 86, -9]
   const len = arr.length
-  let l = LinkedList.fromArray(arr)
+  let l = DoublyLinkedList.fromArray(arr)
 
+  let deleted = {}
   for (let i = 0; i < len; i++) {
     let d = l.delete(arr[i])
+    deleted[i] = true
     expect(l.size).toBe(len - i - 1)
     if (i < len - 1) {
       expect(l.head).not.toBeNull()
@@ -148,12 +166,21 @@ test("it should delete n items", () => {
       expect(l.tail).toBeNull()
     }
     expect(d.value).toBe(arr[i])
+    expect(l.toString()).toBe(arr.reduce((a, b, i) => {
+      if(!deleted[i]) {
+        if(a !== "") return a += ` -> ${b}`
+        else return b.toString()
+      }
+      else return a
+    }, ""))
   }
 
-  l = LinkedList.fromArray(arr)
+  l = DoublyLinkedList.fromArray(arr)
+  deleted = {}
 
   for (let i = 0; i < len; i++) {
     let d = l.delete(arr[len - 1 - i])
+    deleted[len - 1 - i] = true
     expect(l.size).toBe(len - i - 1)
     if (i < len - 1) {
       expect(l.head).not.toBeNull()
@@ -164,9 +191,16 @@ test("it should delete n items", () => {
       expect(l.tail).toBeNull()
     }
     expect(d.value).toBe(arr[len - 1 - i])
+    expect(l.toString()).toBe(arr.reduce((a, b, i) => {
+      if(!deleted[i]) {
+        if(a !== "") return a += ` -> ${b}`
+        else return b.toString()
+      }
+      else return a
+    }, ""))
   }
 
-  l = LinkedList.fromArray(arr)
+  l = DoublyLinkedList.fromArray(arr)
 
   let d = l.delete(8)
   expect(d.value).toBe(8)
@@ -182,8 +216,8 @@ test("it should delete n items", () => {
 
 })
 
-test("it should delete head & tail from linked list of size 1", () => {
-  let l = new LinkedList()
+test("it should delete head & tail from doubly linked list of size 1", () => {
+  let l = new DoublyLinkedList()
   l.append(2)
   expect(l.size).toBe(1)
   expect(l.head).not.toBeNull()
@@ -205,8 +239,8 @@ test("it should delete head & tail from linked list of size 1", () => {
   expect(l.tail).toBeNull()
 })
 
-test("it should delete head & tail from linked list of size 2", () => {
-  let l = new LinkedList()
+test("it should delete head & tail from doubly linked list of size 2", () => {
+  let l = new DoublyLinkedList()
   l.append(2)
   l.append(3)
   expect(l.size).toBe(2)
@@ -218,6 +252,7 @@ test("it should delete head & tail from linked list of size 2", () => {
   expect(l.size).toBe(1)
   expect(l.head).not.toBeNull()
   expect(l.head).toBe(l.tail)
+  expect(l.head.value).toBe(3)
 
   l.append(2)
   expect(l.size).toBe(2)
@@ -228,12 +263,13 @@ test("it should delete head & tail from linked list of size 2", () => {
   expect(l.size).toBe(1)
   expect(l.head).not.toBeNull()
   expect(l.head).toBe(l.tail)
+  expect(l.head.value).toBe(3)
 })
 
-test("it should delete head & tail from linked list of size n", () => {
+test("it should delete head & tail from doubly linked list of size n", () => {
   const arr = [1, 2, 5, 8, 5, 6, 45, 86, -9]
   const len = arr.length
-  let l = LinkedList.fromArray(arr)
+  let l = DoublyLinkedList.fromArray(arr)
 
   let d = l.deleteHead()
 
@@ -246,6 +282,15 @@ test("it should delete head & tail from linked list of size n", () => {
       expect(curr).not.toBeNull()
       expect(curr.value).toBe(arr[i])
       curr = curr.next
+    }
+  }
+
+  curr = l.tail
+  for (let i = len - 1; i >= 0 && curr != null; i--) {
+    if (d.value !== arr[i]) {
+      expect(curr).not.toBeNull()
+      expect(curr.value).toBe(arr[i])
+      curr = curr.previous
     }
   }
 
@@ -263,12 +308,21 @@ test("it should delete head & tail from linked list of size n", () => {
     }
   }
 
+  curr = l.tail
+  for (let i = len - 1; i >= 0 && curr != null; i--) {
+    if (d.value !== arr[i]) {
+      expect(curr).not.toBeNull()
+      expect(curr.value).toBe(arr[i])
+      curr = curr.previous
+    }
+  }
+
 
 })
 
-test("it should return valid string in calling toString", () => {
+test("it should return valid string in calling toString on the doubly linked list", () => {
   const arr = [1, 2, 5, 8, 5, 6, 45, 86, -9]
-  const l = LinkedList.fromArray(arr)
+  const l = DoublyLinkedList.fromArray(arr)
 
   let s = arr[0]
   for (let i = 1; i < arr.length; i++) {
@@ -278,9 +332,9 @@ test("it should return valid string in calling toString", () => {
   expect(l.toString()).toBe(s)
 })
 
-test("it should return find all values in linked list and return index", () => {
+test("it should return find all values in doubly linked list and return index", () => {
   const arr = [1, 2, 5, 8, 7, 6, 45, 86, -9]
-  const l = LinkedList.fromArray(arr)
+  const l = DoublyLinkedList.fromArray(arr)
 
   for (let i = 0; i < arr.length; i++) {
     expect(l.find(arr[i])).toBe(i)
@@ -292,9 +346,9 @@ test("it should return find all values in linked list and return index", () => {
 
 })
 
-test("it should work with any object", () => {
+test("it should work with any object doubly linked list", () => {
   let arr = [12, 5, 23, 45, 35, 11, 20]
-  const l = new LinkedList((a, b) => {
+  const l = new DoublyLinkedList((a, b) => {
     if (a.age === b) return 0
     else return a.age - b
   })
@@ -315,18 +369,18 @@ test("it should work with any object", () => {
   }
 })
 
-test("it should return value using get", () => {
+test("it should return value using get in doubly linked list", () => {
   const arr = [1, 2, 5, 8, 5, 6, 45, 86, -9]
-  const l = LinkedList.fromArray(arr)
+  const l = DoublyLinkedList.fromArray(arr)
 
   for (let i = 0; i < arr.length; i++) {
     expect(l.get(i).value).toBe(arr[i])
   }
 })
 
-test("it should traverse the list with given callback", () => {
+test("it should traverse the doubly linked list with given callback", () => {
   const arr = [1, 2, 5, 8, 5, 6, 45, 86, -9]
-  const l = LinkedList.fromArray(arr)
+  const l = DoublyLinkedList.fromArray(arr)
 
   const res = []
   let times = 0
@@ -341,4 +395,26 @@ test("it should traverse the list with given callback", () => {
     if (i === 0) expect(res[i]).toBe(4 * arr[i])
     else expect(res[i]).toBe(arr[i] + i + Math.floor(arr.length / 2))
   }
+
+})
+
+test("it should traverse from tail the doubly linked list with given callback", () => {
+  const arr = [1, 2, 5, 8, 5, 6, 45, 86, -9]
+  const l = DoublyLinkedList.fromArray(arr)
+
+  const res = []
+  let times = 0
+
+  l.traverse((curr, i, size, list) => {
+    times++
+    if (curr === list.head) res.push(4 * curr.value)
+    else res.push(curr.value + i + Math.floor(size / 2))
+  }, 1)
+
+
+  for (let i = arr.length - 1, len = arr.length; i >= 0; i--) {
+    if (i === len - 1) expect(res[len - 1]).toBe(4 * arr[0])
+    else expect(res[i]).toBe(arr[len  - i - 1] + (len - i - 1) + Math.floor(len / 2))
+  }
+
 })
