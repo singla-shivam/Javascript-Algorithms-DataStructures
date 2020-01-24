@@ -5,9 +5,8 @@ class MinHeap extends Heap {
     return this.comparator.lessThanOrEqual(a, b)
   }
 
-  static fromArray(arr, compareFunc = undefined) {
-    const heap = new MinHeap(compareFunc)
-    return super.fromArray(arr, heap)
+  static fromArray(arr, compareFunc = undefined, classs = undefined) {
+    return super.fromArray(arr, classs || new MinHeap(compareFunc))
   }
 }
 
