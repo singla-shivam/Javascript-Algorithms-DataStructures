@@ -137,12 +137,11 @@ test("it should delete n items", () => {
   for (let i = 0; i < len; i++) {
     let d = l.delete(arr[i])
     expect(l.size).toBe(len - i - 1)
-    if(i < len - 1) {
+    if (i < len - 1) {
       expect(l.head).not.toBeNull()
       expect(l.tail).not.toBeNull()
 
-    }
-    else {
+    } else {
       expect(l.head).toBeNull()
       expect(l.tail).toBeNull()
     }
@@ -154,12 +153,11 @@ test("it should delete n items", () => {
   for (let i = 0; i < len; i++) {
     let d = l.delete(arr[len - 1 - i])
     expect(l.size).toBe(len - i - 1)
-    if(i < len - 1) {
+    if (i < len - 1) {
       expect(l.head).not.toBeNull()
       expect(l.tail).not.toBeNull()
 
-    }
-    else {
+    } else {
       expect(l.head).toBeNull()
       expect(l.tail).toBeNull()
     }
@@ -173,7 +171,7 @@ test("it should delete n items", () => {
   expect(l.size).toBe(len - 1)
   let curr = l.head
   for (let i = 0; i < len && curr != null; i++) {
-    if(d.value !== arr[i]) {
+    if (d.value !== arr[i]) {
       expect(curr).not.toBeNull()
       expect(curr.value).toBe(arr[i])
       curr = curr.next
@@ -242,7 +240,7 @@ test("it should delete head & tail from linked list of size n", () => {
 
   let curr = l.head
   for (let i = 0; i < len && curr != null; i++) {
-    if(d.value !== arr[i]) {
+    if (d.value !== arr[i]) {
       expect(curr).not.toBeNull()
       expect(curr.value).toBe(arr[i])
       curr = curr.next
@@ -256,7 +254,7 @@ test("it should delete head & tail from linked list of size n", () => {
 
   curr = l.head
   for (let i = 1; i < len && curr != null; i++) {
-    if(d.value !== arr[i]) {
+    if (d.value !== arr[i]) {
       expect(curr).not.toBeNull()
       expect(curr.value).toBe(arr[i])
       curr = curr.next
@@ -295,7 +293,7 @@ test("it should return find all values in linked list and return index", () => {
 test("it should work with any object", () => {
   let arr = [12, 5, 23, 45, 35, 11, 20]
   const l = new LinkedList((a, b) => {
-    if(a.age === b) return 0
+    if (a.age === b) return 0
     else return a.age - b
   })
 
@@ -333,12 +331,12 @@ test("it should traverse the list with given callback", () => {
 
   l.traverse((curr, i, size, list) => {
     times++
-    if(curr === list.head) res.push(4 * curr.value)
+    if (curr === list.head) res.push(4 * curr.value)
     else res.push(curr.value + i + Math.floor(size / 2))
   })
 
   for (let i = 0; i < arr.length; i++) {
-    if(i === 0) expect(res[i]).toBe(4 * arr[i])
+    if (i === 0) expect(res[i]).toBe(4 * arr[i])
     else expect(res[i]).toBe(arr[i] + i + Math.floor(arr.length / 2))
   }
 })

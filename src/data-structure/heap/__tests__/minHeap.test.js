@@ -169,16 +169,16 @@ test("it should give indices of items in heap tree", () => {
 
   expect(minHeap.toString()).toBe("1,3,1,3,4,5,3,11,10,4,5,10,12,16,4,13,12,11,10,14,6,10,7,15")
 
-  expect(minHeap.find(3)).toEqual([1,3,6])
-  expect(minHeap.find(1)).toEqual([0,2])
-  expect(minHeap.find(4)).toEqual([4,9,14])
+  expect(minHeap.find(3)).toEqual([1, 3, 6])
+  expect(minHeap.find(1)).toEqual([0, 2])
+  expect(minHeap.find(4)).toEqual([4, 9, 14])
   expect(minHeap.find(0)).toEqual([])
-  expect(minHeap.find(5)).toEqual([5,10])
+  expect(minHeap.find(5)).toEqual([5, 10])
   expect(minHeap.find(6)).toEqual([20])
   expect(minHeap.find(7)).toEqual([22])
-  expect(minHeap.find(10)).toEqual([8,11,18,21])
-  expect(minHeap.find(11)).toEqual([7,17])
-  expect(minHeap.find(12)).toEqual([12,16])
+  expect(minHeap.find(10)).toEqual([8, 11, 18, 21])
+  expect(minHeap.find(11)).toEqual([7, 17])
+  expect(minHeap.find(12)).toEqual([12, 16])
   expect(minHeap.find(13)).toEqual([15])
   expect(minHeap.find(14)).toEqual([19])
   expect(minHeap.find(15)).toEqual([23])
@@ -253,7 +253,7 @@ test('should remove values from heap and correctly re-order the tree', () => {
 test("should build heap with custom object type", () => {
   const arr = [6, 1, 2, 4, 3, 1, 8, 5, 7]
   const heap = new MinHeap((a, b) => {
-    if(a.age === b.age) return 0
+    if (a.age === b.age) return 0
     else return a.age - b.age
   })
   arr.forEach(a => heap.add(new Person(a)))

@@ -163,25 +163,25 @@ test("it should add items correctly - max-heap", () => {
 })
 
 test("it should give indices of items in heap tree - max-heap", () => {
-  const maxHeap = MaxHeap.fromArray([1,2,3,4,5,6,7])
+  const maxHeap = MaxHeap.fromArray([1, 2, 3, 4, 5, 6, 7])
 
   maxHeap.add(13).add(10).add(14).add(3).add(6).add(5).add(10).add(14).add(13).add(12)
     .add(10).add(13).add(3).add(16).add(15).add(7).add(11)
 
   expect(maxHeap.toString()).toBe("16,15,14,13,14,11,10,12,13,10,13,5,5,1,6,4,7,6,10,3,3,3,7,2")
 
-  expect(maxHeap.find(3)).toEqual([19,20,21])
+  expect(maxHeap.find(3)).toEqual([19, 20, 21])
   expect(maxHeap.find(1)).toEqual([13])
   expect(maxHeap.find(4)).toEqual([15])
   expect(maxHeap.find(2)).toEqual([23])
-  expect(maxHeap.find(5)).toEqual([11,12])
-  expect(maxHeap.find(6)).toEqual([14,17])
-  expect(maxHeap.find(7)).toEqual([16,22])
-  expect(maxHeap.find(10)).toEqual([6,9,18])
+  expect(maxHeap.find(5)).toEqual([11, 12])
+  expect(maxHeap.find(6)).toEqual([14, 17])
+  expect(maxHeap.find(7)).toEqual([16, 22])
+  expect(maxHeap.find(10)).toEqual([6, 9, 18])
   expect(maxHeap.find(11)).toEqual([5])
   expect(maxHeap.find(12)).toEqual([7])
-  expect(maxHeap.find(13)).toEqual([3,8,10])
-  expect(maxHeap.find(14)).toEqual([2,4])
+  expect(maxHeap.find(13)).toEqual([3, 8, 10])
+  expect(maxHeap.find(14)).toEqual([2, 4])
   expect(maxHeap.find(15)).toEqual([1])
   expect(maxHeap.find(16)).toEqual([0])
 })
@@ -230,7 +230,7 @@ test('should be possible to remove items from heap with heapify up - max heap', 
 test("should build heap with custom object type max-heap", () => {
   const arr = [6, 1, 2, 4, 3, 1, 8, 5, 7]
   const heap = new MaxHeap((a, b) => {
-    if(a.age === b.age) return 0
+    if (a.age === b.age) return 0
     else return a.age - b.age
   })
   arr.forEach(a => heap.add(new Person(a)))

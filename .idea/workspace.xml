@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/shivam.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/heap/__tests__/maxHeap.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/heap/__tests__/minHeap.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/heap/heap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/heap/maxHeap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/heap/minHeap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/comparator/comparator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/comparator/comparator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structure/heap/__tests__/maxHeap.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/heap/__tests__/maxHeap.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structure/heap/__tests__/minHeap.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/heap/__tests__/minHeap.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structure/heap/heap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/heap/heap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structure/linked-list/linkedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/linked-list/linkedList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structure/trees/segmentTree/segmentTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/segmentTree/segmentTree.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,7 @@
       <updated>1579712726052</updated>
       <workItem from="1579712728130" duration="6701000" />
       <workItem from="1579783779638" duration="19769000" />
-      <workItem from="1579840815563" duration="7346000" />
+      <workItem from="1579840815563" duration="7692000" />
     </task>
     <servers />
   </component>
@@ -124,22 +123,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="121" width="427" height="482" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579785218637" />
-    <state width="1343" height="143" key="GridCell.Tab.0.bottom" timestamp="1579864993181">
+    <state width="1343" height="143" key="GridCell.Tab.0.bottom" timestamp="1579865059893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="143" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579864993181" />
-    <state width="1343" height="143" key="GridCell.Tab.0.center" timestamp="1579864993180">
+    <state width="1343" height="143" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579865059893" />
+    <state width="1343" height="143" key="GridCell.Tab.0.center" timestamp="1579865059893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="143" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579864993180" />
-    <state width="1343" height="143" key="GridCell.Tab.0.left" timestamp="1579864993180">
+    <state width="1343" height="143" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579865059893" />
+    <state width="1343" height="143" key="GridCell.Tab.0.left" timestamp="1579865059892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="143" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579864993180" />
-    <state width="1343" height="143" key="GridCell.Tab.0.right" timestamp="1579864993181">
+    <state width="1343" height="143" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579865059892" />
+    <state width="1343" height="143" key="GridCell.Tab.0.right" timestamp="1579865059893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="143" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579864993181" />
+    <state width="1343" height="143" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579865059893" />
     <state width="1343" height="189" key="GridCell.Tab.1.bottom" timestamp="1579864055010">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

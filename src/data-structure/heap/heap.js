@@ -115,16 +115,15 @@ class Heap {
     let currentIndex = customIndex
     let nextIndex = null
 
-    while(this.hasLeftChild(currentIndex)) {
-      if(
+    while (this.hasLeftChild(currentIndex)) {
+      if (
         this.hasRightChild(currentIndex)
         && this.isPairInCorrectOrder(this.rightChild(currentIndex), this.leftChild(currentIndex))
       ) {
         nextIndex = this.getRightChildIndex(currentIndex)
-      }
-      else nextIndex = this.getLeftChildIndex(currentIndex)
+      } else nextIndex = this.getLeftChildIndex(currentIndex)
 
-      if(this.isPairInCorrectOrder(this.heap[currentIndex], this.heap[nextIndex])) break
+      if (this.isPairInCorrectOrder(this.heap[currentIndex], this.heap[nextIndex])) break
 
       this.swap(currentIndex, nextIndex)
       currentIndex = nextIndex
@@ -144,7 +143,7 @@ class Heap {
   heapifyUp(customIndex) {
     let currentIndex = customIndex || this.heap.length - 1
 
-    while(
+    while (
       this.hasParent(currentIndex)
       && !this.isPairInCorrectOrder(this.parent(currentIndex), this.heap[currentIndex])
       ) {
@@ -172,7 +171,7 @@ class Heap {
    * @return {null|T}
    */
   peek() {
-    if(this.size === 0) return null
+    if (this.size === 0) return null
     return this.heap[0]
   }
 
@@ -181,8 +180,8 @@ class Heap {
    * @return {null|T}
    */
   poll() {
-    if(this.size === 0) return null
-    if(this.size === 1) return this.heap.pop()
+    if (this.size === 0) return null
+    if (this.size === 1) return this.heap.pop()
 
     const item = this.heap[0]
     this.heap[0] = this.heap.pop()
@@ -197,15 +196,14 @@ class Heap {
 
     for (let i = 0, len = itemsToRemove.length; i < len; i++) {
       let indexToRemove = itemsToRemove.pop()
-      if(indexToRemove === this.size - 1) this.heap.pop()
+      if (indexToRemove === this.size - 1) this.heap.pop()
       else {
         this.heap[indexToRemove] = this.heap.pop()
         let parent = this.parent(indexToRemove)
 
-        if(this.hasLeftChild(indexToRemove) && (!this.hasParent(indexToRemove) || this.isPairInCorrectOrder(parent, this.heap[indexToRemove]))) {
+        if (this.hasLeftChild(indexToRemove) && (!this.hasParent(indexToRemove) || this.isPairInCorrectOrder(parent, this.heap[indexToRemove]))) {
           this.heapifyDown(indexToRemove)
-        }
-        else this.heapifyUp(indexToRemove)
+        } else this.heapifyUp(indexToRemove)
         itemsToRemove = this.find(item)
       }
     }
@@ -222,7 +220,7 @@ class Heap {
     const found = []
 
     for (let i = 0; i < this.size; i++) {
-      if(this.comparator.equal(item, this.heap[i])) found.push(i)
+      if (this.comparator.equal(item, this.heap[i])) found.push(i)
     }
 
     return found

@@ -32,15 +32,15 @@ class LinkedList {
    * @returns {LinkedList}
    */
   prepend(value) {
-    if(value === undefined || value === null) throw "[value] can not be null or undefined"
+    if (value === undefined || value === null) throw "[value] can not be null or undefined"
 
     this.head = new LinkedListNode(value, this.head)
 
-    if(!this.tail) {
+    if (!this.tail) {
       this.tail = this.head
     }
 
-    this.size ++
+    this.size++
 
     return this
   }
@@ -51,12 +51,12 @@ class LinkedList {
    * @returns {LinkedList}
    */
   append(value) {
-    if(value === undefined || value === null) throw "[value] can not be null or undefined"
+    if (value === undefined || value === null) throw "[value] can not be null or undefined"
 
     const newNode = new LinkedListNode(value)
     this.size++
 
-    if(!this.head) {
+    if (!this.head) {
       this.head = newNode
       this.tail = newNode
       return this
@@ -73,19 +73,19 @@ class LinkedList {
    * @returns {LinkedListNode|null}
    */
   delete(value) {
-    if(value === undefined || value === null) throw "[value] can not be null or undefined"
-    if(!this.head) return null
+    if (value === undefined || value === null) throw "[value] can not be null or undefined"
+    if (!this.head) return null
 
     let deleteNode = null
 
-    if(this.head === this.tail) {
+    if (this.head === this.tail) {
       deleteNode = this.head
       this.head = this.tail = null
       this.size--
       return deleteNode
     }
 
-    if(this.compare.equal(this.head.value, value)) {
+    if (this.compare.equal(this.head.value, value)) {
       deleteNode = this.head
       this.head = deleteNode.next
       this.size--
@@ -94,13 +94,13 @@ class LinkedList {
 
     let currentNode = this.head
 
-    while(currentNode.next != null) {
-      if(this.compare.equal(currentNode.next.value, value)) {
+    while (currentNode.next != null) {
+      if (this.compare.equal(currentNode.next.value, value)) {
         deleteNode = currentNode.next
         currentNode.next = deleteNode.next
         this.size--
 
-        if(deleteNode === this.tail) this.tail = currentNode
+        if (deleteNode === this.tail) this.tail = currentNode
         break
       }
       currentNode = currentNode.next
@@ -116,26 +116,26 @@ class LinkedList {
    * @returns {LinkedListNode|null|number}
    */
   find(value, index = true) {
-    if(value === undefined || value === null) throw "[value] can not be null or undefined"
+    if (value === undefined || value === null) throw "[value] can not be null or undefined"
 
-    if(!this.head) {
-      if(index) return -1
+    if (!this.head) {
+      if (index) return -1
       else return null
     }
     let i = 0
 
     let currentNode = this.head
 
-    while(currentNode != null) {
-      if(this.compare.equal(currentNode.value, value)) {
-        if(index) return i
+    while (currentNode != null) {
+      if (this.compare.equal(currentNode.value, value)) {
+        if (index) return i
         else return currentNode
       }
       i++
       currentNode = currentNode.next
     }
 
-    if(index) return -1
+    if (index) return -1
     else return null
   }
 
@@ -144,9 +144,9 @@ class LinkedList {
    * @returns {LinkedListNode|null}
    */
   deleteHead() {
-    if(!this.head) return null
+    if (!this.head) return null
     let c = this.head
-    if(c.next) this.head = c.next
+    if (c.next) this.head = c.next
     else {
       this.head = null
       this.tail = null
@@ -160,16 +160,16 @@ class LinkedList {
    * @returns {LinkedListNode|null}
    */
   deleteTail() {
-    if(!this.head) return null
+    if (!this.head) return null
     const deleteNode = this.tail
-    if(this.head === this.tail) {
+    if (this.head === this.tail) {
       this.head = null
       this.tail = null
       this.size--
       return deleteNode
     }
     let currentNode = this.head
-    while(currentNode.next !== this.tail) {
+    while (currentNode.next !== this.tail) {
       currentNode = currentNode.next
     }
     this.tail = currentNode
@@ -184,11 +184,11 @@ class LinkedList {
    * @param callback {TraverseCallback}
    */
   traverse(callback) {
-    if(!this.head) return LinkedList.UNDEFINED_HEAD
+    if (!this.head) return LinkedList.UNDEFINED_HEAD
     let curr = this.head
     let index = 0
     let object = [null, true]
-    while(curr !== null && object[1]) {
+    while (curr !== null && object[1]) {
       object = callback(curr, index, this.size, this) || [null, true]
       curr = curr.next
       index++
@@ -204,7 +204,7 @@ class LinkedList {
    */
   get(index) {
     return this.traverse((curr, i) => {
-      if(i === index) return [curr, false]
+      if (i === index) return [curr, false]
       else return [null, true]
     })
   }
@@ -217,7 +217,7 @@ class LinkedList {
     let arr = new Array(this.size)
     let i = 0
     let currentNode = this.head
-    while(currentNode != null) {
+    while (currentNode != null) {
       arr[i] = currentNode.value
       currentNode = currentNode.next
       i++
@@ -236,7 +236,7 @@ class LinkedList {
     s[0] = this.head.value
     let curr = this.head.next
     let i = 1
-    while(curr) {
+    while (curr) {
       s[i++] = "->"
       s[i++] = curr.value.toString()
       curr = curr.next
