@@ -56,7 +56,7 @@ class Comparator {
    * @returns {boolean}
    */
   lessThanOrEqual(a, b) {
-    return this.compareFunc(a, b) < 0 || this.compareFunc(a, b) === 0
+    return this.lessThan(a, b) || this.equal(a, b)
   }
 
   /**
@@ -66,7 +66,7 @@ class Comparator {
    * @returns {boolean}
    */
   moreThanOrEqual(a, b) {
-    return this.compareFunc(a, b) < 0 || this.compareFunc(a, b) === 0
+    return this.moreThan(a, b) || this.equal(a, b)
   }
 
 }

@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/linked-list/linkedList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/linked-list/linkedListNode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/trees/binarySearchTree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/trees/segmentTree/__tests__/segmentTree.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/comparator/comparator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/shivam.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/heap/__tests__/maxHeap.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/heap/__tests__/minHeap.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/heap/heap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/heap/maxHeap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/heap/minHeap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-structure/trees/segmentTree/segmentTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/segmentTree/segmentTree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/comparator/comparator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/comparator/comparator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
     <property name="last_opened_file_path" value="$USER_HOME$/contests" />
@@ -57,7 +53,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.linkedList.test.js">
+  <component name="RunManager">
     <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -67,85 +63,6 @@
       <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
-    <configuration name="it should return find all values in linked list and return index" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" />
-      <test-names>
-        <test-name value="it should return find all values in linked list and return index" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="it should return value using get" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" />
-      <test-names>
-        <test-name value="it should return value using get" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="it should traverse the list with given callback" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" />
-      <test-names>
-        <test-name value="it should traverse the list with given callback" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="it should work with any object" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" />
-      <test-names>
-        <test-name value="it should work with any object" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="linkedList.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Jest.All Tests" />
-      <item itemvalue="Jest.linkedList.test.js" />
-      <item itemvalue="Jest.it should work with any object" />
-      <item itemvalue="Jest.it should return find all values in linked list and return index" />
-      <item itemvalue="Jest.it should return value using get" />
-      <item itemvalue="Jest.it should traverse the list with given callback" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Jest.linkedList.test.js" />
-        <item itemvalue="Jest.it should traverse the list with given callback" />
-        <item itemvalue="Jest.it should return value using get" />
-        <item itemvalue="Jest.it should work with any object" />
-        <item itemvalue="Jest.it should return find all values in linked list and return index" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -170,7 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579712726052</updated>
       <workItem from="1579712728130" duration="6701000" />
-      <workItem from="1579783779638" duration="9615000" />
+      <workItem from="1579783779638" duration="19769000" />
+      <workItem from="1579840815563" duration="7346000" />
     </task>
     <servers />
   </component>
@@ -186,18 +104,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="278" y="24" width="800" height="675" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1579712778262" />
-    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579797092982">
+    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579864991892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579797092982" />
+    <state x="141" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579864991892" />
     <state x="100" y="99" width="1166" height="528" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1579787643786">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="100" y="99" width="1166" height="528" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1579787643786" />
-    <state x="491" y="82" width="374" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1579716607667">
+    <state x="491" y="82" width="374" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1579798140486">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="491" y="82" width="374" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1579716607667" />
+    <state x="491" y="82" width="374" height="560" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1579798140486" />
     <state x="424" y="20" width="531" height="685" key="#should_build_tree_for_input_array_length_of_power_of_two" timestamp="1579714839175">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -206,26 +124,78 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="121" width="427" height="482" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579785218637" />
-    <state width="1343" height="301" key="GridCell.Tab.0.bottom" timestamp="1579797093749">
+    <state width="1343" height="143" key="GridCell.Tab.0.bottom" timestamp="1579864993181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="301" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579797093749" />
-    <state width="1343" height="301" key="GridCell.Tab.0.center" timestamp="1579797093748">
+    <state width="1343" height="143" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579864993181" />
+    <state width="1343" height="143" key="GridCell.Tab.0.center" timestamp="1579864993180">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="301" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579797093748" />
-    <state width="1343" height="301" key="GridCell.Tab.0.left" timestamp="1579797093747">
+    <state width="1343" height="143" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579864993180" />
+    <state width="1343" height="143" key="GridCell.Tab.0.left" timestamp="1579864993180">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="301" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579797093747" />
-    <state width="1343" height="301" key="GridCell.Tab.0.right" timestamp="1579797093748">
+    <state width="1343" height="143" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579864993180" />
+    <state width="1343" height="143" key="GridCell.Tab.0.right" timestamp="1579864993181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="301" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579797093748" />
-    <state x="347" y="159" key="run.anything.popup" timestamp="1579789927605">
+    <state width="1343" height="143" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579864993181" />
+    <state width="1343" height="189" key="GridCell.Tab.1.bottom" timestamp="1579864055010">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="347" y="159" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1579789927605" />
+    <state width="1343" height="189" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579864055010" />
+    <state width="1343" height="189" key="GridCell.Tab.1.center" timestamp="1579864055010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="189" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1579864055010" />
+    <state width="1343" height="189" key="GridCell.Tab.1.left" timestamp="1579864055009">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="189" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1579864055009" />
+    <state width="1343" height="189" key="GridCell.Tab.1.right" timestamp="1579864055010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="189" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1579864055010" />
+    <state width="1343" height="189" key="GridCell.Tab.2.bottom" timestamp="1579864055011">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="189" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579864055011" />
+    <state width="1343" height="189" key="GridCell.Tab.2.center" timestamp="1579864055010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="189" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1579864055010" />
+    <state width="1343" height="189" key="GridCell.Tab.2.left" timestamp="1579864055010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="189" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1579864055010" />
+    <state width="1343" height="189" key="GridCell.Tab.2.right" timestamp="1579864055010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="189" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1579864055010" />
+    <state width="1343" height="189" key="GridCell.Tab.3.bottom" timestamp="1579864055011">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="189" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579864055011" />
+    <state width="1343" height="189" key="GridCell.Tab.3.center" timestamp="1579864055011">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="189" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1579864055011" />
+    <state width="1343" height="189" key="GridCell.Tab.3.left" timestamp="1579864055011">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="189" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1579864055011" />
+    <state width="1343" height="189" key="GridCell.Tab.3.right" timestamp="1579864055011">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1343" height="189" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1579864055011" />
+    <state x="347" y="159" key="run.anything.popup" timestamp="1579799386493">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="347" y="159" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1579799386493" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1579807502776">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1579807502776" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/javascript_algo_ds$should_build_tree_for_input_array_length_of_power_of_two.info" NAME="should build tree for input array length of power of two Coverage Results" MODIFIED="1579714890398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
