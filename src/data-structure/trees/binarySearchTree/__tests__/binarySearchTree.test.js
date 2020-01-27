@@ -114,6 +114,9 @@ describe("create binary search tree", () => {
 
   });
 
+})
+
+describe("remove nodes", () => {
   it('should remove nodes', function () {
     const arr = [7, 6, 5, 2, 3, 8, 4, 1, 9, 10, 11, 12, 14, 13, 26, 17, 18, 29, 19, 20, 13, 21, 22, 23, 24, 2, 5, 26, 27, 28]
 
@@ -196,6 +199,80 @@ describe("create binary search tree", () => {
     expect(tree.toString()).toBe("2,5,11,17,18,19,20,21,23,24,26,27,28,29")
     expect(s).toBe("17,5,2,11,23,18,20,19,21,26,24,28,27,29,")
     checkParents(tree.root)
+  });
+
+  it('should set value undefined when only one node', function () {
+    const tree = new BinarySearchTree()
+    tree.insert(5)
+
+    expect(tree.root.value).toBe(5)
+    expect(tree.root.find(5)).toBe(tree.root)
+
+    expect(tree.remove(6)).toBeFalsy()
+
+    tree.remove(5)
+    expect(tree.root.value).toBe(undefined)
+    expect(tree.root.find(5)).toBeNull()
+    checkParents(tree.root)
+  });
+
+  it('should remove root when it has only one child', function () {
+    const tree = new BinarySearchTree()
+    tree.insert(5).insert(10).insert(12).insert(7).insert(6)
+
+    let s = ""
+    s = preOrderString(tree)
+    expect(s).toBe("5,10,7,6,12,")
+    checkParents(tree.root)
+
+    tree.remove(5)
+    s = preOrderString(tree)
+    expect(s).toBe("10,7,6,12,")
+    checkParents(tree.root)
+
+
+  });
+
+  it('should replace right of some node', function () {
+    const tree = new BinarySearchTree()
+    tree.insert(5).insert(10).insert(8)
+
+    let s = ""
+    s = preOrderString(tree)
+    expect(s).toBe("5,10,8,")
+    checkParents(tree.root)
+
+    tree.remove(10)
+    s = preOrderString(tree)
+    expect(s).toBe("5,8,")
+    checkParents(tree.root)
+
+  });
+
+})
+
+describe("min-max", () => {
+  it('should find min of some node', function () {
+    const arr = [7, 6, 5, 2, 3, 8, 4, 1, 9, 10, 11, 12, 14, 13, 26, 17, 18, 29, 19, 20, 13, 21, 22, 23, 24, 2, 5, 26, 27, 28]
+
+    const tree = BinarySearchTree.fromArray(arr)
+
+    expect(tree.root.min.value).toBe(1)
+    expect(tree.root.find(5).min.value).toBe(1)
+    expect(tree.root.right.min.value).toBe(14)
+    expect(tree.root.right.find(20).min.value).toBe(19)
+  });
+
+  it('should find max of some node', function () {
+    const arr = [7, 6, 5, 2, 3, 8, 4, 1, 9, 10, 11, 12, 14, 13, 26, 17, 18, 29, 19, 20, 13, 21, 22, 23, 24, 2, 5, 26, 27, 28]
+
+    const tree = BinarySearchTree.fromArray(arr)
+
+    expect(tree.root.max.value).toBe(29)
+    expect(tree.root.find(5).max.value).toBe(12)
+    expect(tree.root.right.max.value).toBe(29)
+    expect(tree.root.right.find(20).max.value).toBe(21)
+    expect(tree.root.right.find(24).max.value).toBe(24)
   });
 })
 

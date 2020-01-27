@@ -10,6 +10,18 @@ describe("create AvlTree", () => {
     expect(tree.root.right).toBeNull()
   });
 
+  it('should create tree from array', function () {
+    const arr = [7, 6, 5, 2, 3, 8, 4, 1, 9, 10, 11, 12, 14, 13, 26, 17, 18, 29, 19, 20, 13, 21, 22, 23, 24, 2, 5, 26, 27, 28]
+
+    const tree = AvlTree.fromArray(arr)
+    let s = ""
+    s = preOrderString(tree)
+    expect(tree.toString()).toBe("1,2,3,4,5,6,7,8,9,10,11,12,13,14,17,18,19,20,21,22,23,24,26,27,28,29")
+    expect(s).toBe("14,7,4,2,1,3,6,5,11,9,8,10,13,12,24,20,18,17,19,22,21,23,27,26,28,29,")
+    checkParents(tree.root)
+
+  });
+
   it('should do left-left rotation', function () {
     const tree = new AvlTree()
 
@@ -173,6 +185,32 @@ describe("create AvlTree", () => {
     expect(tree.toString()).toBe("100,200,210,225,310,325,330,340,350,400,500")
     expect(s).toBe("325,225,200,100,210,310,350,340,330,400,500,")
     checkParents(tree.root)
+  });
+})
+
+describe("remove", () => {
+  it('should remove nodes from tree', function () {
+    const arr = [7, 6, 5, 2, 3, 8, 4, 1, 9, 10, 11, 12, 14, 13, 26, 17, 18, 29, 19, 20, 13, 21, 22, 23, 24, 2, 5, 26, 27, 28]
+
+    const tree = AvlTree.fromArray(arr)
+    let s = ""
+    s = preOrderString(tree)
+    expect(tree.toString()).toBe("1,2,3,4,5,6,7,8,9,10,11,12,13,14,17,18,19,20,21,22,23,24,26,27,28,29")
+    expect(s).toBe("14,7,4,2,1,3,6,5,11,9,8,10,13,12,24,20,18,17,19,22,21,23,27,26,28,29,")
+    checkParents(tree.root)
+
+    tree.remove(12)
+    s = preOrderString(tree)
+    expect(tree.toString()).toBe("1,2,3,4,5,6,7,8,9,10,11,13,14,17,18,19,20,21,22,23,24,26,27,28,29")
+    expect(s).toBe("14,7,4,2,1,3,6,5,11,9,8,10,13,24,20,18,17,19,22,21,23,27,26,28,29,")
+    checkParents(tree.root)
+
+    tree.remove(26)
+    s = preOrderString(tree)
+    expect(tree.toString()).toBe("1,2,3,4,5,6,7,8,9,10,11,13,14,17,18,19,20,21,22,23,24,27,28,29")
+    expect(s).toBe("14,7,4,2,1,3,6,5,11,9,8,10,13,24,20,18,17,19,22,21,23,28,27,29,")
+    checkParents(tree.root)
+
   });
 })
 

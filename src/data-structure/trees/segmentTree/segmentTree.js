@@ -4,7 +4,7 @@ class SegmentTree {
     this.operationFallback = operationFallBack
 
     if (n == null && inputArray == null) {
-      throw "Size and Input array can not be null at same time"
+      throw new Error("Size and Input array can not be null at same time")
     } else if (n == null) {
       this.inputSize = inputArray.length
       this.inputArray = inputArray

@@ -14,6 +14,24 @@ test('should build tree for input array length of power of two', () => {
   expect(segmentTree2.tree.length).toBe((2 * array2.length));
 });
 
+test("should throw error", () => {
+  try {
+    const segmentTree = new SegmentTree(Math.min, Infinity)
+  } catch (e) {
+    expect(e.message).toBe("Size and Input array can not be null at same time")
+  }
+
+})
+
+test("should create tree with given size", () => {
+  let segmentTree = new SegmentTree(Math.min, Infinity, 5)
+  expect(segmentTree.size).toBe(16)
+  expect(segmentTree.inputSize).toBe(5)
+  segmentTree = new SegmentTree(Math.min, Infinity, 150)
+  expect(segmentTree.size).toBe(512)
+  expect(segmentTree.inputSize).toBe(150)
+})
+
 test('should build tree for input array with length not of power of two', () => {
   const array = [5, 2, 3, 7, 6];
   const segmentTree = new SegmentTree(Math.min, Infinity, null, array);

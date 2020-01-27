@@ -330,6 +330,17 @@ test("it should return valid string in calling toString on the doubly linked lis
   expect(l.toString()).toBe(s)
 })
 
+test("it should return -1 or null when list is empty or the desired element not found", () => {
+  const l = new DoublyLinkedList()
+  expect(l.find(4)).toBe(-1)
+  expect(l.find(4, false)).toBeNull()
+
+  const arr = [1, 2, 5, 8, 7, 6, 45, 86, -9]
+  const l2 = DoublyLinkedList.fromArray(arr)
+  expect(l2.find(4)).toBe(-1)
+  expect(l2.find(4, false)).toBeNull()
+})
+
 test("it should return find all values in doubly linked list and return index", () => {
   const arr = [1, 2, 5, 8, 7, 6, 45, 86, -9]
   const l = DoublyLinkedList.fromArray(arr)
@@ -354,6 +365,8 @@ test("it should work with any object doubly linked list", () => {
   arr.forEach(a => l.append(new Person(a)))
 
   expect(l.toString()).toBe("age => 12 -> age => 5 -> age => 23 -> age => 45 -> age => 35 -> age => 11 -> age => 20")
+  expect(l.head.toString()).toBe("age => 12")
+  expect(l.tail.toString()).toBe("age => 20")
 
   expect(l.find(12)).toBe(0)
   expect(l.find(13)).toBe(-1)

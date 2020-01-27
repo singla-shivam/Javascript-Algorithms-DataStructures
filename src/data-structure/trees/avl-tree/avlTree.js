@@ -17,7 +17,14 @@ class AvlTree extends BinarySearchTree {
 
   remove(value) {
     let removed = super.remove(value)
-    if (removed) this.balance(this.root)
+    if (removed) {
+      let curr = this.root
+      while(curr) {
+        this.balance(curr)
+        if(value < curr.value) curr = curr.left
+        else curr = curr.right
+      }
+    }
     return removed
   }
 
