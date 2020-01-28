@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +105,7 @@
       <workItem from="1580065160158" duration="404000" />
       <workItem from="1580104309139" duration="8282000" />
       <workItem from="1580144553124" duration="4495000" />
-      <workItem from="1580215589655" duration="12302000" />
+      <workItem from="1580215589655" duration="13678000" />
     </task>
     <servers />
   </component>
@@ -129,6 +129,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="100" y="99" width="1166" height="528" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1579787643786" />
+    <state x="435" y="155" width="485" height="415" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580239604319">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="435" y="155" width="485" height="415" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1580239604319" />
     <state x="491" y="82" width="374" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1579890017468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
