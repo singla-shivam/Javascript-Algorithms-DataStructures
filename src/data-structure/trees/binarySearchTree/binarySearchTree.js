@@ -75,7 +75,7 @@ class BinarySearchTree {
    * @return {BinarySearchTree}
    */
   static fromArray(arr) {
-    const tree = new BinarySearchTree()
+    const tree = new this()
     arr.sort((a, b) => a - b)
 
     i(0, arr.length - 1)

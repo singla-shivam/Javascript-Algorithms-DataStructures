@@ -120,20 +120,7 @@ class AvlTree extends BinarySearchTree {
   }
 
   static fromArray(array) {
-    const tree = new AvlTree()
-    array.sort((p, q) => p - q)
-
-    i(0, array.length - 1)
-
-    function i(l, r) {
-      if (l > r) return
-      let m = Math.floor((l + r) / 2)
-      tree.insert(array[m])
-      i(l, m - 1)
-      i(m + 1, r)
-    }
-
-    return tree
+    return super.fromArray(array)
   }
 
 }

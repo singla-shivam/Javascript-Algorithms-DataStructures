@@ -1,4 +1,5 @@
 const RedBlackTree = require('../redBlackTree')
+const fs = require('fs')
 
 describe("create and insert", () => {
   it('should create empty tree', function () {
@@ -319,6 +320,32 @@ describe("create and insert", () => {
     expect(tree.root.right.left.left.left.color).toBe(RedBlackTree.BLACK)
     expect(tree.root.right.left.left.right.color).toBe(RedBlackTree.BLACK)
     expect(tree.root.right.left.right.right.color).toBe(RedBlackTree.RED)
+
+  });
+
+  it('should create redBlack tree from array', function () {
+    const arr = [7, 6, 5, 2, 3, 8, 4, 1, 9, 10, 11, 12, 14, 13, 26, 17, 18, 29, 19, 20, 13, 21, 22, 23, 24, 2, 5, 26, 27, 28]
+
+    const tree = RedBlackTree.fromArray(arr)
+    let s = ""
+    s = preOrderString(tree)
+    expect(tree.toString()).toBe("1,2,3,4,5,6,7,8,9,10,11,12,13,14,17,18,19,20,21,22,23,24,26,27,28,29")
+    expect(s).toBe("11,5,4,2,1,3,9,7,6,8,10,18,13,12,14,17,22,20,19,21,24,23,27,26,28,29,")
+    checkParents(tree.root)
+
+    let colors = [1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1]
+
+    let i = -1
+    checkColors(tree.root)
+    function checkColors(node) {
+      if(node.left) checkColors(node.left)
+      i++
+      console.log(node.value, node.color.toString())
+      if(colors[i]) expect(node.color).toBe(RedBlackTree.RED)
+      else expect(node.color).toBe(RedBlackTree.BLACK)
+      if(node.right) checkColors(node.right)
+
+    }
 
   });
 })

@@ -106,7 +106,7 @@ class RedBlackTree extends BinarySearchTree{
     let parentOfGrandParent = grandParent.parent
     let isLeft = false
     if(parentOfGrandParent) {
-      isLeft = (parentOfGrandParent.left.value === grandParent.value)
+      isLeft = (parentOfGrandParent.left && parentOfGrandParent.left.value === grandParent.value)
     }
 
     let parent = grandParent.left
@@ -199,20 +199,7 @@ class RedBlackTree extends BinarySearchTree{
   }
 
   static fromArray(array) {
-    const tree = new RedBlackTree()
-    array.sort((p, q) => p - q)
-
-    i(0, array.length - 1)
-
-    function i(l, r) {
-      if (l > r) return
-      let m = Math.floor((l + r) / 2)
-      tree.insert(array[m])
-      i(l, m - 1)
-      i(m + 1, r)
-    }
-
-    return tree
+    return super.fromArray(array)
   }
 }
 
