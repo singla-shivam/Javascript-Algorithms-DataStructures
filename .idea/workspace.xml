@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/trees/avl-tree/avlTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/avl-tree/avlTree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/trees/binarySearchTree/binarySearchTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/binarySearchTree/binarySearchTree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/trees/red-black-tree/__tests__/redBlackTree.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/red-black-tree/__tests__/redBlackTree.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/trees/red-black-tree/redBlackTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/red-black-tree/redBlackTree.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +13,7 @@
   <component name="CoverageViewManager">
     <option name="myAutoScrollToSource" value="true" />
     <option name="myAutoScrollFromSource" value="true" />
-    <option name="myElementSize" value="353" />
+    <option name="myElementSize" value="363" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -108,7 +105,7 @@
       <workItem from="1580065160158" duration="404000" />
       <workItem from="1580104309139" duration="8282000" />
       <workItem from="1580144553124" duration="4495000" />
-      <workItem from="1580215589655" duration="11038000" />
+      <workItem from="1580215589655" duration="12302000" />
     </task>
     <servers />
   </component>
@@ -224,10 +221,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="239" y="20" width="877" height="684" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1580059889712" />
-    <state x="347" y="159" key="run.anything.popup" timestamp="1580105210219">
+    <state x="347" y="159" key="run.anything.popup" timestamp="1580237991918">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="347" y="159" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580105210219" />
+    <state x="347" y="159" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580237991918" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580108601555">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
