@@ -18,7 +18,12 @@ describe("create binary search tree", () => {
     expect(tree.root.left).toBeNull()
     expect(tree.root.right).toBeNull()
 
-    tree.insert(5).insert(7).insert(4).insert(6).insert(10).insert(9)
+    tree.insert(5)
+    tree.insert(7)
+    tree.insert(4)
+    tree.insert(6)
+    tree.insert(10)
+    tree.insert(9)
 
     expect(tree.toString()).toBe("4,5,6,7,9,10")
 
@@ -73,10 +78,24 @@ describe("create binary search tree", () => {
 
     const tree = BinarySearchTree.fromArray(arr)
 
-    tree.insert(15).insert(14).insert(16).insert(17).insert(15)
-      .insert(19).insert(18).insert(22).insert(23).insert(19)
-      .insert(20).insert(30).insert(26).insert(28).insert(29)
-      .insert(27).insert(24).insert(25)
+    tree.insert(15)
+    tree.insert(14)
+    tree.insert(16)
+    tree.insert(17)
+    tree.insert(15)
+    tree.insert(19)
+    tree.insert(18)
+    tree.insert(22)
+    tree.insert(23)
+    tree.insert(19)
+    tree.insert(20)
+    tree.insert(30)
+    tree.insert(26)
+    tree.insert(28)
+    tree.insert(29)
+    tree.insert(27)
+    tree.insert(24)
+    tree.insert(25)
 
 
     let res = []
@@ -218,7 +237,11 @@ describe("remove nodes", () => {
 
   it('should remove root when it has only one child', function () {
     const tree = new BinarySearchTree()
-    tree.insert(5).insert(10).insert(12).insert(7).insert(6)
+    tree.insert(5)
+    tree.insert(10)
+    tree.insert(12)
+    tree.insert(7)
+    tree.insert(6)
 
     let s = ""
     s = preOrderString(tree)

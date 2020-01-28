@@ -15,11 +15,10 @@ class BinarySearchTree {
   /**
    * Inserts [value] to the tree
    * @param value {number}
-   * @return {BinarySearchTree}
+   * @return {BinarySearchTreeNode}
    */
-  insert(value) {
-    this.root.insert(value)
-    return this
+  insert(value,) {
+    return this.root.insert(value)
   }
 
   /**

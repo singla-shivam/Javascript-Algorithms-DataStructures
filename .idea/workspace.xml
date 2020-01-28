@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/data-structure/trees/red-black-tree/__tests__/redBlackTree.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/trees/red-black-tree/redBlackTree.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/doubly-linked-list/__tests__/doublyLinkedList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/doubly-linked-list/__tests__/doublyLinkedList.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/linked-list/__tests__/linkedList.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/trees/avl-tree/__tests__/avlTree.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/avl-tree/__tests__/avlTree.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/trees/avl-tree/avlTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/avl-tree/avlTree.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data-structure/trees/binarySearchTree/__tests__/binarySearchTree.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/binarySearchTree/__tests__/binarySearchTree.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/trees/segmentTree/__tests__/segmentTree.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/segmentTree/__tests__/segmentTree.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/trees/segmentTree/segmentTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/segmentTree/segmentTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-structure/trees/binarySearchTree/binarySearchTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/binarySearchTree/binarySearchTree.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +16,7 @@
   <component name="CoverageViewManager">
     <option name="myAutoScrollToSource" value="true" />
     <option name="myAutoScrollFromSource" value="true" />
-    <option name="myElementSize" value="140" />
+    <option name="myElementSize" value="298" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,7 +67,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.remove.should remove nodes from tree">
+  <component name="RunManager" selected="Jest.redBlackTree.test.js">
     <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -80,43 +77,23 @@
       <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
-    <configuration name="create AvlTree.should create tree from array" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="redBlackTree.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/data-structure/trees/avl-tree/__tests__/avlTree.test.js" />
-      <test-names>
-        <test-name value="create AvlTree" />
-        <test-name value="should create tree from array" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="remove.should remove nodes from tree" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/data-structure/trees/avl-tree/__tests__/avlTree.test.js" />
-      <test-names>
-        <test-name value="remove" />
-        <test-name value="should remove nodes from tree" />
-      </test-names>
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/data-structure/trees/red-black-tree/__tests__/redBlackTree.test.js" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Jest.All Tests" />
-      <item itemvalue="Jest.create AvlTree.should create tree from array" />
-      <item itemvalue="Jest.remove.should remove nodes from tree" />
+      <item itemvalue="Jest.redBlackTree.test.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.remove.should remove nodes from tree" />
-        <item itemvalue="Jest.create AvlTree.should create tree from array" />
+        <item itemvalue="Jest.redBlackTree.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +125,9 @@
       <workItem from="1579929505124" duration="3386000" />
       <workItem from="1580038857994" duration="22825000" />
       <workItem from="1580065160158" duration="404000" />
-      <workItem from="1580104309139" duration="3671000" />
+      <workItem from="1580104309139" duration="8282000" />
+      <workItem from="1580144553124" duration="4495000" />
+      <workItem from="1580215589655" duration="7822000" />
     </task>
     <servers />
   </component>
@@ -164,10 +143,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="278" y="24" width="800" height="675" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1579712778262" />
-    <state x="141" y="21" width="1084" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580107489651">
+    <state x="141" y="21" width="1084" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580234021070">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="141" y="21" width="1084" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580107489651" />
+    <state x="141" y="21" width="1084" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580234021070" />
     <state x="100" y="99" width="1166" height="528" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1579787643786">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -188,70 +167,70 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="121" width="427" height="482" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580108044713" />
-    <state width="1320" height="160" key="GridCell.Tab.0.bottom" timestamp="1580107951242">
+    <state width="1320" height="88" key="GridCell.Tab.0.bottom" timestamp="1580234110726">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="160" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580107951242" />
-    <state width="1320" height="160" key="GridCell.Tab.0.center" timestamp="1580107951242">
+    <state width="1320" height="88" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580234110726" />
+    <state width="1320" height="88" key="GridCell.Tab.0.center" timestamp="1580234110725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="160" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580107951242" />
-    <state width="1320" height="160" key="GridCell.Tab.0.left" timestamp="1580107951241">
+    <state width="1320" height="88" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580234110725" />
+    <state width="1320" height="88" key="GridCell.Tab.0.left" timestamp="1580234110724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="160" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580107951241" />
-    <state width="1320" height="160" key="GridCell.Tab.0.right" timestamp="1580107951242">
+    <state width="1320" height="88" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580234110724" />
+    <state width="1320" height="88" key="GridCell.Tab.0.right" timestamp="1580234110726">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="160" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580107951242" />
-    <state width="1320" height="300" key="GridCell.Tab.1.bottom" timestamp="1580107263232">
+    <state width="1320" height="88" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580234110726" />
+    <state width="1343" height="273" key="GridCell.Tab.1.bottom" timestamp="1580216915257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580107263232" />
-    <state width="1320" height="300" key="GridCell.Tab.1.center" timestamp="1580107263231">
+    <state width="1343" height="273" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580216915257" />
+    <state width="1343" height="273" key="GridCell.Tab.1.center" timestamp="1580216915257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580107263231" />
-    <state width="1320" height="300" key="GridCell.Tab.1.left" timestamp="1580107263231">
+    <state width="1343" height="273" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580216915257" />
+    <state width="1343" height="273" key="GridCell.Tab.1.left" timestamp="1580216915257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580107263231" />
-    <state width="1320" height="300" key="GridCell.Tab.1.right" timestamp="1580107263232">
+    <state width="1343" height="273" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580216915257" />
+    <state width="1343" height="273" key="GridCell.Tab.1.right" timestamp="1580216915257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580107263232" />
-    <state width="1320" height="300" key="GridCell.Tab.2.bottom" timestamp="1580107263233">
+    <state width="1343" height="273" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580216915257" />
+    <state width="1343" height="273" key="GridCell.Tab.2.bottom" timestamp="1580216915259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580107263233" />
-    <state width="1320" height="300" key="GridCell.Tab.2.center" timestamp="1580107263232">
+    <state width="1343" height="273" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580216915259" />
+    <state width="1343" height="273" key="GridCell.Tab.2.center" timestamp="1580216915258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1580107263232" />
-    <state width="1320" height="300" key="GridCell.Tab.2.left" timestamp="1580107263232">
+    <state width="1343" height="273" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1580216915258" />
+    <state width="1343" height="273" key="GridCell.Tab.2.left" timestamp="1580216915258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1580107263232" />
-    <state width="1320" height="300" key="GridCell.Tab.2.right" timestamp="1580107263232">
+    <state width="1343" height="273" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1580216915258" />
+    <state width="1343" height="273" key="GridCell.Tab.2.right" timestamp="1580216915258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1580107263232" />
-    <state width="1320" height="300" key="GridCell.Tab.3.bottom" timestamp="1580107263233">
+    <state width="1343" height="273" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1580216915258" />
+    <state width="1343" height="273" key="GridCell.Tab.3.bottom" timestamp="1580216915260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580107263233" />
-    <state width="1320" height="300" key="GridCell.Tab.3.center" timestamp="1580107263233">
+    <state width="1343" height="273" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580216915260" />
+    <state width="1343" height="273" key="GridCell.Tab.3.center" timestamp="1580216915259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1580107263233" />
-    <state width="1320" height="300" key="GridCell.Tab.3.left" timestamp="1580107263233">
+    <state width="1343" height="273" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1580216915259" />
+    <state width="1343" height="273" key="GridCell.Tab.3.left" timestamp="1580216915259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1580107263233" />
-    <state width="1320" height="300" key="GridCell.Tab.3.right" timestamp="1580107263233">
+    <state width="1343" height="273" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1580216915259" />
+    <state width="1343" height="273" key="GridCell.Tab.3.right" timestamp="1580216915259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1320" height="300" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1580107263233" />
+    <state width="1343" height="273" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1580216915259" />
     <state x="187" y="0" key="SettingsEditor" timestamp="1579887165688">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -268,13 +247,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="347" y="159" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580105210219" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580053848834">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580108601555">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580053848834" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580108601555" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/javascript_algo_ds$create_and_insert_should_do_insert_correctly_and_do_LL_rotation.info" NAME="create and insert.should do insert correctly and do LL rotation Coverage Results" MODIFIED="1580148667518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/javascript_algo_ds$segmentTree_test_js.info" NAME="segmentTree.test.js Coverage Results" MODIFIED="1580106099552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/javascript_algo_ds$redBlackTree_test_js.info" NAME="redBlackTree.test.js Coverage Results" MODIFIED="1580234035131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/javascript_algo_ds$linkedList_test_js.info" NAME="linkedList.test.js Coverage Results" MODIFIED="1580105296765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/javascript_algo_ds$it_should_work_with_any_object.info" NAME="it should work with any object Coverage Results" MODIFIED="1580105408252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/javascript_algo_ds$doublyLinkedList_test_js.info" NAME="doublyLinkedList.test.js Coverage Results" MODIFIED="1580105543806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -283,6 +264,7 @@
     <SUITE FILE_PATH="coverage/javascript_algo_ds$it_should_return__1_or_null_when_list_is_empty_or_the_desired_element_not_found.info" NAME="it should return -1 or null when list is empty or the desired element not found Coverage Results" MODIFIED="1580105345607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/javascript_algo_ds$remove_nodes_should_replace_node_with_its_right.info" NAME="remove nodes.should replace node with its right Coverage Results" MODIFIED="1580107268322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/javascript_algo_ds$All_Tests.info" NAME="All Tests Coverage Results" MODIFIED="1580105576558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/javascript_algo_ds$remove.info" NAME="remove Coverage Results" MODIFIED="1580108558199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/javascript_algo_ds$create_AvlTree_should_create_tree_from_array.info" NAME="create AvlTree.should create tree from array Coverage Results" MODIFIED="1580107645117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/javascript_algo_ds$remove_nodes_should_replace_right_of_some_node.info" NAME="remove nodes.should replace right of some node Coverage Results" MODIFIED="1580107447922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/javascript_algo_ds$should_build_tree_for_input_array_length_of_power_of_two.info" NAME="should build tree for input array length of power of two Coverage Results" MODIFIED="1579714890398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
