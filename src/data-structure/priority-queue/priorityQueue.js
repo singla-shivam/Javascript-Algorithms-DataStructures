@@ -6,8 +6,7 @@ const Comparator = require('../../utils/comparator/comparator')
  * The element with priority 0 have highest priority among all the elements.
  * The priorities decreases from 0 to n.
  * @class PriorityQueue
- * @template T
- * @property {Map<T, number>} priorities
+ * @property {Map<number, number>} priorities
  */
 class PriorityQueue extends MinHeap {
   constructor() {
@@ -30,7 +29,7 @@ class PriorityQueue extends MinHeap {
 
   /**
    * Removes the element with highest priority
-   * @return {T}
+   * @return {number}
    */
   dequeue() {
     return this.poll()
@@ -38,7 +37,7 @@ class PriorityQueue extends MinHeap {
 
   /**
    * Returns the first element in the queue with highest priority without deleting it
-   * @return {T}
+   * @return {number}
    */
   peek() {
     return super.peek();
@@ -46,7 +45,7 @@ class PriorityQueue extends MinHeap {
 
   /**
    * Adds item with default priority 0
-   * @param item {T}
+   * @param item {number}
    * @return {PriorityQueue}
    */
   add(item) {
@@ -55,7 +54,7 @@ class PriorityQueue extends MinHeap {
 
   /**
    * Checks if the [item] is in queue
-   * @param item {T}
+   * @param item {number}
    */
   has(item) {
     return this.find(item).length > 0
@@ -68,7 +67,7 @@ class PriorityQueue extends MinHeap {
 
   /**
    * Creates priority queue from a 2-D array
-   * @param arr {Array<T, number>[]}
+   * @param arr {Array<number, number>[]}
    */
   static fromArray(arr) {
     const p = new PriorityQueue()
