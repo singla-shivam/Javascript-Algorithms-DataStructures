@@ -88,7 +88,7 @@ Type - `number[]`
 ## heap.toString()
 Converts the heap in array and returns it
 #### Returns
-Type - `T[]`
+Type - `String`
 
 ## Heap.fromArray()
 ***@static***  
