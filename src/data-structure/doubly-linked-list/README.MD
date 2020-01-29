@@ -185,10 +185,10 @@ Traverses the list from head to tail.
 * **callback** - _TraverseCallback_
     * The callback to which the current node and its index is passed.
     * Arguments - 
-        * curr - _DoublyLinkedListNode_ --- the current node
+        * curr - _[DoublyLinkedListNode](doublyLinkedListNode.js)_ --- the current node
         * index - _number_ --- index of current node (0-indexing)
         * size - _number_ --- number of elements in the list
-        * list - _DoublyLinkedList_ --- the list itself
+        * list - _[DoublyLinkedList](doublyLinkedList.js)_ --- the list itself
     * Throws error if callback is not defined
     
 ##### Returns
@@ -203,10 +203,10 @@ Traverses the list from tail to head.
 * **callback** - _TraverseCallback_
     * The callback to which the current node and its index is passed.
     * Arguments - 
-        * curr - _DoublyLinkedListNode_ --- the current node
+        * curr - _[DoublyLinkedListNode](doublyLinkedListNode.js)_ --- the current node
         * index - _number_ --- index of current node (0-indexing)
         * size - _number_ --- number of elements in the list
-        * list - _DoublyLinkedList_ --- the list itself
+        * list - _[DoublyLinkedList](doublyLinkedList.js)_ --- the list itself
     * Throws error if callback is not defined
      
 ##### Returns
@@ -215,21 +215,30 @@ Returns the object returned by the `callback`
 &nbsp;</br>
 
 #### list.toArray()
+___
 Converts the list into an array and returns it.
-#####Returns
+##### Returns
 Type - Array<T>
 
 &nbsp;</br>
 
 #### list.toString()
+____
 Converts the list into string of form "1 -> 2 -> 3" and returns it.
-#####Returns
+##### Returns
 Type - String
 
 &nbsp;</br>
 
 #### DoublyLinkedList.fromArray(array, compareFunc)
+___
 ***@static***  
 Creates the list from an array
-#####Returns
+##### Parameters
+* **array** - _T[]_
+    * Array of objects
+* **compareFunction** - _function_
+    * Default value - undefined
+
+##### Returns
 Type - `DoublyLinkedList`

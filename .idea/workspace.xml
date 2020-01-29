@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/data-structure/linked-list/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data-structure/doubly-linked-list/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/doubly-linked-list/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/doubly-linked-list/doublyLinkedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/doubly-linked-list/doublyLinkedList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +127,7 @@
       <workItem from="1580144553124" duration="4495000" />
       <workItem from="1580215589655" duration="17229000" />
       <workItem from="1580278010131" duration="2843000" />
-      <workItem from="1580316852891" duration="2694000" />
+      <workItem from="1580316852891" duration="4180000" />
     </task>
     <servers />
   </component>
@@ -152,10 +151,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="100" y="99" width="1166" height="528" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1579787643786" />
-    <state x="435" y="155" width="485" height="415" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580239604319">
+    <state x="435" y="155" width="511" height="415" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580320248608">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="435" y="155" width="485" height="415" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1580239604319" />
+    <state x="435" y="155" width="511" height="415" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1580320248608" />
     <state x="491" y="82" width="374" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1579890017468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -248,10 +247,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="239" y="20" width="877" height="684" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1580059889712" />
-    <state x="347" y="159" key="run.anything.popup" timestamp="1580279591817">
+    <state x="347" y="159" key="run.anything.popup" timestamp="1580320905835">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="347" y="159" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580279591817" />
+    <state x="347" y="159" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580320905835" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580279097337">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
