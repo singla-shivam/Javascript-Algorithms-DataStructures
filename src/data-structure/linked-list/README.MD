@@ -5,10 +5,10 @@ In its most basic form, each node contains: data, and a reference (in other word
 
 Linked lists are among the simplest and most common data structures.
 They can be used to implement several other common abstract data types, including
-[lists](https://en.wikipedia.org/wiki/List_(abstract_data_type\)),
-[stacks](https://en.wikipedia.org/wiki/Stack_(abstract_data_type\)),
-[queues](https://en.wikipedia.org/wiki/Queue_(abstract_data_type\)), and
-[S-expressions](https://en.wikipedia.org/wiki/S-expression).
+lists,
+stacks,
+queues, and
+S-expressions.
 
 ## Installation
 Install with npm
@@ -62,46 +62,40 @@ new LinkedList(compareFunction)
 ##### Static methods
 * [fromArray](#linkedlistfromarrayarray-comparefunc) 
 
-#### list.prepend(value)
-___
+list.prepend(value)
+-----
 Adds `value` at the start of the list.
-##### Parameters
+ #### Parameters
 * **value** - _T_
     * The value to be added.
     
-##### Returns
-Returns `this`
-
-&nbsp;</br>
+ #### Returns
+Returns `this` 
  
-#### list.append(value)
-___
+list.append(value)
+----
 Adds `value` at the end of the list.
-##### Parameters
+ #### Parameters
 * **value** - _T_
     * The value to be added.
      
-##### Returns
-Returns `this`
+ #### Returns
+Returns `this` 
  
-&nbsp;</br>
- 
-#### list.delete(value)
-___
+list.delete(value)
+----
 Deletes `value` from the list.
-##### Parameters
+ #### Parameters
 * **value** - _T_
     * The value to be deleted.
      
-##### Returns
-Returns `this`
+ #### Returns
+Returns `this` 
  
-&nbsp;</br>
- 
-#### list.find(value, [index])
-___
+list.find(value, [index])
+----
 Finds `value` in the list.
-##### Parameters
+ #### Parameters
 * **value** - _T_
     * Value to find.
 * **index** - _boolean_
@@ -110,47 +104,39 @@ Finds `value` in the list.
     * If false, returns the object itself if found, `null` if not found.
     * Optional
      
-##### Returns
+ #### Returns
 Type - `number | LinkedListNode`  
-Returns index or the object itself
+Returns index or the object itself 
  
-&nbsp;</br>
- 
-#### list.deleteHead()
-___
+list.deleteHead()
+----
 Deletes head from the list.
-##### Returns
+ #### Returns
 Type - `LinkedListNode | null`  
-Returns removed head of the list if list is not empty or `null` otherwise.
+Returns removed head of the list if list is not empty or `null` otherwise. 
  
-&nbsp;</br>
- 
-#### list.deleteTail()
-___
+list.deleteTail()
+----
 Deletes tail from the list.
-##### Returns
+ #### Returns
 Type - `LinkedListNode | null`  
-Returns removed tail of the list if list is not empty or `null` otherwise.
+Returns removed tail of the list if list is not empty or `null` otherwise. 
  
-&nbsp;</br>
- 
-#### list.get(index)
-___
+list.get(index)
+----
 Get a node at index `index`.
-##### Parameters
+ #### Parameters
 * **index** - _number_
     * The index of the node.
      
-##### Returns
+ #### Returns
 Type - `LinkedListNode | symbol`  
-Returns the node at `index`, null if `index` is greater than size of list, `LinkedList.UNDEFINED_HEAD` if list is empty 
+Returns the node at `index`, null if `index` is greater than size of list, `LinkedList.UNDEFINED_HEAD` if list is empty  
  
-&nbsp;</br>
- 
-#### list.traverse()
-___
+list.traverse()
+----
 Traverses the list from head to tail.
-##### Parameters
+ #### Parameters
 * **callback** - _TraverseCallback_
     * The callback to which the current node and its index is passed.
     * Arguments - 
@@ -160,36 +146,30 @@ Traverses the list from head to tail.
         * list - _[LinkedList](linkedList.js)_ --- the list itself
     * Throws error if callback is not defined
     
-##### Returns
-Returns the object returned by the `callback`
+ #### Returns
+Returns the object returned by the `callback` 
 
-&nbsp;</br>
-
-#### list.toArray()
-___
+list.toArray()
+----
 Converts the list into an array and returns it.
-##### Returns
-Type - Array<T>
+ #### Returns
+Type - Array<T> 
 
-&nbsp;</br>
-
-#### list.toString()
-____
+list.toString()
+----
 Converts the list into string of form "1 -> 2 -> 3" and returns it.
-##### Returns
-Type - String
+ #### Returns
+Type - String 
 
-&nbsp;</br>
-
-#### LinkedList.fromArray(array, [compareFunc])
-___
+LinkedList.fromArray(array, [compareFunc])
+----
 ***@static***  
 Creates the list from an array
-##### Parameters
+ #### Parameters
 * **array** - _T[]_
     * Array of objects
 * **compareFunction** - _function_
     * Default value - undefined
 
-##### Returns
+ #### Returns
 Type - `LinkedList`

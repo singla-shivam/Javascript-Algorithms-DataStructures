@@ -31,7 +31,7 @@ const list = new DoublyLinkedList()
 ```javascript
 new DoublyLinkedList(compareFunction)
 ```
-##### Parameters
+ #### Parameters
 * **compareFunction** - _function_
     * Default value - undefined
     
@@ -63,46 +63,40 @@ new DoublyLinkedList(compareFunction)
 ##### Static methods
 * [fromArray](#doublylinkedlistfromarrayarray-comparefunc) 
 
-#### list.prepend(value)
-___
+list.prepend(value)
+----
 Adds `value` at the start of the list.
-##### Parameters
+ #### Parameters
 * **value** - _T_
     * The value to be added.
     
-##### Returns
+ #### Returns
 Returns `this`
-
-&nbsp;</br>
  
-#### list.append(value)
-___
+list.append(value)
+----
 Adds `value` at the end of the list.
-##### Parameters
+ #### Parameters
 * **value** - _T_
     * The value to be added.
      
-##### Returns
-Returns `this`
+ #### Returns
+Returns `this` 
  
-&nbsp;</br>
- 
-#### list.delete(value)
-___
+list.delete(value)
+----
 Deletes `value` from the list.
-##### Parameters
+ #### Parameters
 * **value** - _T_
     * The value to be deleted.
      
-##### Returns
-Returns `this`
+ #### Returns
+Returns `this` 
  
-&nbsp;</br>
- 
-#### list.find(value, [index])
-___
+list.find(value, [index])
+----
 Finds `value` in the list.
-##### Parameters
+ #### Parameters
 * **value** - _T_
     * Value to find.
 * **index** - _boolean_
@@ -111,55 +105,46 @@ Finds `value` in the list.
     * If false, returns the object itself if found, `null` if not found.
     * Optional
      
-##### Returns
+ #### Returns
 Type - `number | DoublyLinkedListNode`  
 Returns index or the object itself
- 
-&nbsp;</br>
- 
-#### list.deleteHead()
-___
+
+list.deleteHead()
+----
 Deletes head from the list.
-##### Returns
+ #### Returns
 Type - `DoublyLinkedListNode | null`  
 Returns removed head of the list if list is not empty or `null` otherwise.
- 
-&nbsp;</br>
- 
-#### list.deleteTail()
-___
+
+list.deleteTail()
+----
 Deletes tail from the list.
-##### Returns
+ #### Returns
 Type - `DoublyLinkedListNode | null`  
 Returns removed tail of the list if list is not empty or `null` otherwise.
- 
-&nbsp;</br>
- 
-#### list.get(index)
-___
+
+list.get(index)
+----
 Get a node at index `index`.
-##### Parameters
+ #### Parameters
 * **index** - _number_
     * The index of the node.
      
-##### Returns
+ #### Returns
 Type - `DoublyLinkedListNode | symbol`  
 Returns the node at `index`, null if `index` is greater than size of list, `DoublyLinkedList.UNDEFINED_HEAD` if list is empty 
  
-&nbsp;</br>
- 
-#### list.reverse()
-___
+list.reverse()
+----
 Reverse the list.
-##### Returns
+ #### Returns
 Returns `this`
+
  
-&nbsp;</br>
- 
-#### list.traverse(callback, [start])
-___
+list.traverse(callback, [start])
+----
 Traverses the list either from head or tail.
-##### Parameters
+ #### Parameters
 * **callback** - _TraverseCallback_
     * The callback to which the current node and its index is passed.
     * Arguments - 
@@ -173,15 +158,14 @@ Traverses the list either from head or tail.
     * If `0` traversal is from head, if `1` traversal is from tail in reverse direction.
     * Optional
     
- ##### Returns
+  #### Returns
  Returns the object returned by the `callback`
  
-&nbsp;</br>
 
-#### list.traverseFromHead()
-___
+list.traverseFromHead()
+----
 Traverses the list from head to tail.
-##### Parameters
+ #### Parameters
 * **callback** - _TraverseCallback_
     * The callback to which the current node and its index is passed.
     * Arguments - 
@@ -191,15 +175,14 @@ Traverses the list from head to tail.
         * list - _[DoublyLinkedList](doublyLinkedList.js)_ --- the list itself
     * Throws error if callback is not defined
     
-##### Returns
+ #### Returns
 Returns the object returned by the `callback`
 
-&nbsp;</br>
 
-#### list.traverseFromTail()
-___
+list.traverseFromTail()
+----
 Traverses the list from tail to head.
-##### Parameters
+ #### Parameters
 * **callback** - _TraverseCallback_
     * The callback to which the current node and its index is passed.
     * Arguments - 
@@ -209,36 +192,33 @@ Traverses the list from tail to head.
         * list - _[DoublyLinkedList](doublyLinkedList.js)_ --- the list itself
     * Throws error if callback is not defined
      
-##### Returns
+ #### Returns
 Returns the object returned by the `callback`
 
-&nbsp;</br>
 
-#### list.toArray()
-___
+list.toArray()
+----
 Converts the list into an array and returns it.
-##### Returns
+ #### Returns
 Type - Array<T>
 
-&nbsp;</br>
 
-#### list.toString()
-____
+list.toString()
+----
 Converts the list into string of form "1 -> 2 -> 3" and returns it.
-##### Returns
+ #### Returns
 Type - String
 
-&nbsp;</br>
 
-#### DoublyLinkedList.fromArray(array, compareFunc)
-___
+DoublyLinkedList.fromArray(array, compareFunc)
+----
 ***@static***  
 Creates the list from an array
-##### Parameters
+ #### Parameters
 * **array** - _T[]_
     * Array of objects
 * **compareFunction** - _function_
     * Default value - undefined
 
-##### Returns
+ #### Returns
 Type - `DoublyLinkedList`
