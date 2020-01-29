@@ -3,10 +3,10 @@ const Comparator = require('./../../utils/comparator/comparator')
 
 /**
  * @callback TraverseCallback
- * @param {LinkedListNode} curr - current node
+ * @param {DoublyLinkedListNode} curr - current node
  * @param {number} [index] - index of current node
  * @param {number} [size] - size of the list
- * @param {LinkedList} [list] - the list itself
+ * @param {DoublyLinkedList} [list] - the list itself
  * @return {[any, boolean]} returns an array whose first element is object that you want [traverse] to return
  * and second is boolean - false if you want to stop the traversal or true otherwise
  */
@@ -112,7 +112,7 @@ class DoublyLinkedList {
    * Return node with first matching value [value] and returns its index if [index] is true, the node otherwise
    * @param value {T} - value to find
    * @param index {boolean} - [true] if you want index or [false] if you want the matching node
-   * @returns {LinkedListNode|null|number}
+   * @returns {DoublyLinkedListNode|null|number}
    */
   find(value, index = true) {
     if (value === undefined || value === null) throw "[value] can not be null or undefined"
@@ -180,7 +180,7 @@ class DoublyLinkedList {
   /**
    * Get an element at [index] (0-indexing)
    * @param index {number} - the index of the element that you want to retrieve
-   * @return {symbol | boolean}
+   * @return {symbol | DoublyLinkedListNode}
    */
   get(index) {
     return this.traverseFromHead((curr, i) => {
@@ -223,7 +223,7 @@ class DoublyLinkedList {
   traverse(callback, start = 0) {
     if (!callback) throw new Error("{callback} is not defined")
     if (start === 0) return this.traverseFromHead(callback)
-    else this.traverseFromTail(callback)
+    else return this.traverseFromTail(callback)
   }
 
   /**
