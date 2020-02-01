@@ -13,6 +13,7 @@ class AvlTree extends BinarySearchTree {
       this.balance(node)
       node = node.parent
     }
+    return node
   }
 
   remove(value) {
