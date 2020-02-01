@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data-structure/trees/avl-tree/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data-structure/trees/red-black-tree/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-structure/trees/avl-tree/avlTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-structure/trees/avl-tree/avlTree.js" afterDir="false" />
-    </list>
+    <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +131,7 @@
       <workItem from="1580316852891" duration="10112000" />
       <workItem from="1580403274687" duration="1460000" />
       <workItem from="1580468328996" duration="1195000" />
-      <workItem from="1580559536115" duration="3249000" />
+      <workItem from="1580559536115" duration="3500000" />
     </task>
     <task id="LOCAL-00001" summary="binarySearchTree readme">
       <created>1580563867101</created>
@@ -145,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580563867101</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="binarySearchTree &amp; avlTree readme">
+      <created>1580565059900</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580565059900</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +155,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="binarySearchTree readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="binarySearchTree readme" />
+    <MESSAGE value="binarySearchTree &amp; avlTree readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="binarySearchTree &amp; avlTree readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="44" width="531" height="637" key="#All_Tests" timestamp="1579713270121">
@@ -188,10 +191,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="424" y="20" width="531" height="685" key="#should_build_tree_for_input_array_length_of_power_of_two/0.0.1366.728@0.0.1366.728" timestamp="1579714839175" />
-    <state x="292" y="0" width="772" height="726" key="CommitChangelistDialog2" timestamp="1580563866258">
+    <state x="292" y="0" width="772" height="726" key="CommitChangelistDialog2" timestamp="1580565059752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="292" y="0" width="772" height="726" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580563866258" />
+    <state x="292" y="0" width="772" height="726" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580565059752" />
     <state x="466" y="121" width="427" height="482" key="FileChooserDialogImpl" timestamp="1580240559416">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -264,10 +267,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579887165688" />
-    <state x="278" y="95" width="800" height="534" key="Vcs.Push.Dialog.v2" timestamp="1580563910843">
+    <state x="278" y="95" width="800" height="534" key="Vcs.Push.Dialog.v2" timestamp="1580565067552">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="278" y="95" width="800" height="534" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580563910843" />
+    <state x="278" y="95" width="800" height="534" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580565067552" />
     <state x="486" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580562877490">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
