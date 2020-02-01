@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75f7201f-5b10-4793-bc0a-37a57d72f6c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data-structure/priority-queue/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-structure/trees/binarySearchTree/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript&#10;JavaScript 1.5" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/data-structure/trees/avl-tree" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -59,7 +59,11 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/data-structure/trees/avl-tree" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/data-structure/trees/binarySearchTree" />
       <recent name="$PROJECT_DIR$/src/data-structure" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -126,7 +130,10 @@
       <workItem from="1580144553124" duration="4495000" />
       <workItem from="1580215589655" duration="17229000" />
       <workItem from="1580278010131" duration="2843000" />
-      <workItem from="1580316852891" duration="8471000" />
+      <workItem from="1580316852891" duration="10112000" />
+      <workItem from="1580403274687" duration="1460000" />
+      <workItem from="1580468328996" duration="1195000" />
+      <workItem from="1580559536115" duration="2153000" />
     </task>
     <servers />
   </component>
@@ -238,10 +245,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579887165688" />
-    <state x="486" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579892587240">
+    <state x="486" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580562877490">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="486" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1579892587240" />
+    <state x="486" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1580562877490" />
     <state x="239" y="20" width="877" height="684" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1580059889712">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
