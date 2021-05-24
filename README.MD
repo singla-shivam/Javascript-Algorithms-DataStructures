@@ -23,5 +23,5 @@ The repository contains following data-structures
     * [Fenwick Tree(Binary indexed trees)](/src/data-structure/trees/fenwickTree)
     * [Red Black Tree](/src/data-structure/trees/red-black-tree)
     * [Segment Trees](/src/data-structure/trees/segmentTree)
-    
+    rtunryujyty
  
